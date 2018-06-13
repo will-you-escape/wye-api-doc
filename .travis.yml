@@ -1,0 +1,17 @@
+sudo: false
+
+language: ruby
+
+rvm:
+  - 2.3.3
+  - 2.4.0
+
+cache: bundler
+
+script: bundle exec middleman build
+
+deploy:
+  provider: surge
+  domain: wye-api.surge.sh
+  on: master
+  project: ./build/
