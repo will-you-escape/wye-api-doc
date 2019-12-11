@@ -117,9 +117,19 @@ This mutation will return a <code>sessionid</code> cookie.
 | email     | Yes       | Email of the user provided on user creation |
 | password  | Yes       | Password provided on user creation          |
 
-## rooms
+## Escape room sessions
 
-> To get all escape room sessions played, use this GraphQL query (`GET` method):
+We name escape room session an instance of an escape room that users played.
+These sessions contain a number of information about the game played:
+
+| Fields         | Mandatory | Description                                      |
+| -------------- | --------- | ------------------------------------------------ |
+| name           | Yes       | The name of the escape room played               |
+| playedDatetime | No        | Day of the game                                  |
+| durationTime   | No        | Duration of the game (usually the maximum is 1h) |
+| numberOfHints  | No        | Number of hints given by the game master to help |
+
+> To get all escape room sessions played for a given user, use this GraphQL query (`GET` method):
 
 ```javascript
 query {
