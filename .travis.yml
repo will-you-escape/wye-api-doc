@@ -3,7 +3,12 @@ sudo: false
 language: ruby
 
 rvm:
+  - 2.3.3
   - 2.4.0
+
+before_install:
+  - gem update --system
+  - gem install bundler
 
 cache: bundler
 
@@ -18,3 +23,4 @@ deploy:
   skip_cleanup: true
   # ...which can then be deployed to surge.sh from this `build` folder.
   project: ./build/
+  - 2.4.0

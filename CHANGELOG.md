@@ -1,8 +1,47 @@
 # Changelog
 
+## Version 2.4.0
+
+_October 19, 2019_
+
+- Move repository from lord/slate to slatedocs/slate
+- Fix documentation to point at new repo link, thanks to [Arun](https://github.com/slash-arun), [Gustavo Gawryszewski](https://github.com/gawry), and [Daniel Korbit](https://github.com/danielkorbit)
+- Update `nokogiri` to 1.10.4
+- Update `ffi` in `Gemfile.lock` to fix security warnings, thanks to [Grey Baker](https://github.com/greysteil) and [jackmack](https://github.com/jakemack)
+- Update `rack` to 2.0.7 in `Gemfile.lock` to fix security warnings, thanks to [Grey Baker](https://github.com/greysteil) and [jackmack](https://github.com/jakemack)
+- Update middleman to `4.3` and relax constraints on middleman related gems, thanks to [jackmack](https://github.com/jakemack)
+- Add sass gem, thanks to [jackmack](https://github.com/jackmack)
+- Activate `asset_cache` in middleman to improve cacheability of static files, thanks to [Sam Gilman](https://github.com/thenengah)
+- Update to using bundler 2 for `Gemfile.lock`, thanks to [jackmack](https://github.com/jakemack)
+
+## Version 2.3.1
+
+_July 5, 2018_
+
+- Update `sprockets` in `Gemfile.lock` to fix security warnings
+
+## Version 2.3
+
+_July 5, 2018_
+
+- Allows strikethrough in markdown by default.
+- Upgrades jQuery to 3.2.1, thanks to [Tomi Takussaari](https://github.com/TomiTakussaari)
+- Fixes invalid HTML in `layout.erb`, thanks to [Eric Scouten](https://github.com/scouten) for pointing out
+- Hopefully fixes Vagrant memory issues, thanks to [Petter Blomberg](https://github.com/p-blomberg) for the suggestion
+- Cleans HTML in headers before setting `document.title`, thanks to [Dan Levy](https://github.com/justsml)
+- Allows trailing whitespace in markdown files, thanks to [Samuel Cousin](https://github.com/kuzyn)
+- Fixes pushState/replaceState problems with scrolling not changing the document hash, thanks to [Andrey Fedorov](https://github.com/anfedorov)
+- Removes some outdated examples, thanks [@al-tr](https://github.com/al-tr), [Jerome Dahdah](https://github.com/jdahdah), and [Ricardo Castro](https://github.com/mccricardo)
+- Fixes `nav-padding` bug, thanks [Jerome Dahdah](https://github.com/jdahdah)
+- Code style fixes thanks to [Sebastian Zaremba](https://github.com/vassyz)
+- Nokogiri version bump thanks to [Grey Baker](https://github.com/greysteil)
+- Fix to default `index.md` text thanks to [Nick Busey](https://github.com/NickBusey)
+
+Thanks to everyone who contributed to this release!
+
 ## Version 2.2
 
-*January 19, 2018*
+_January 19, 2018_
 
 - Fixes bugs with some non-roman languages not generating unique headers
 - Adds editorconfig, thanks to [Jay Thomas](https://github.com/jaythomas)
@@ -12,7 +51,7 @@
 
 ## Version 2.1
 
-*October 30, 2017*
+_October 30, 2017_
 
 - Right-to-left text stylesheet option, thanks to [Mohammad Hossein Rabiee](https://github.com/mhrabiee)
 - Fix for HTML5 history state bug, thanks to [Zach Toolson](https://github.com/ztoolson)
@@ -22,7 +61,7 @@ Thanks to everyone who submitted PRs for this version!
 
 ## Version 2.0
 
-*July 17, 2017*
+_July 17, 2017_
 
 - All-new statically generated table of contents
   - Should be much faster loading and scrolling for large pages
@@ -42,7 +81,7 @@ Thanks to everyone who helped debug or wrote code for this version! It was a ser
 
 ## Version 1.5
 
-*February 23, 2017*
+_February 23, 2017_
 
 - Add [multiple tabs per programming language](https://github.com/lord/slate/wiki/Multiple-language-tabs-per-programming-language) feature
 - Upgrade Middleman to add Ruby 1.4.0 compatibility
@@ -51,7 +90,7 @@ Thanks to everyone who helped debug or wrote code for this version! It was a ser
 
 ## Version 1.4
 
-*November 24, 2016*
+_November 24, 2016_
 
 - Upgrade Middleman and Rouge gems, should hopefully solve a number of bugs
 - Update some links in README
@@ -64,25 +103,25 @@ Thanks to everyone who helped debug or wrote code for this version! It was a ser
 
 ## Version 1.3.3
 
-*June 11, 2016*
+_June 11, 2016_
 
 Documentation and example changes.
 
 ## Version 1.3.2
 
-*February 3, 2016*
+_February 3, 2016_
 
 A small bugfix for slightly incorrect background colors on code samples in some cases.
 
 ## Version 1.3.1
 
-*January 31, 2016*
+_January 31, 2016_
 
 A small bugfix for incorrect whitespace in code blocks.
 
 ## Version 1.3
 
-*January 27, 2016*
+_January 27, 2016_
 
 We've upgraded Middleman and a number of other dependencies, which should fix quite a few bugs.
 
@@ -90,7 +129,7 @@ Instead of `rake build` and `rake deploy`, you should now run `bundle exec middl
 
 ## Version 1.2
 
-*June 20, 2015*
+_June 20, 2015_
 
 **Fixes:**
 
@@ -109,7 +148,7 @@ Instead of `rake build` and `rake deploy`, you should now run `bundle exec middl
 
 ## Version 1.1
 
-*July 27, 2014*
+_July 27, 2014_
 
 **Fixes:**
 
@@ -117,7 +156,7 @@ Instead of `rake build` and `rake deploy`, you should now run `bundle exec middl
 
 ## Version 1.0
 
-*July 2, 2014*
+_July 2, 2014_
 
 [View Issues](https://github.com/tripit/slate/issues?milestone=1&state=closed)
 
